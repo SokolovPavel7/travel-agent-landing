@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; /*отступы менжду колонками и рядами*/
+}
+// .logo {
+// }
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    a {
+        color: #181818;
+    }
+    a:hover,
+    a.active {
+        color: #35aff4;
+    }
+}
+
+.nav__btns {
+    display: flex;
+    gap: 12px;
+}

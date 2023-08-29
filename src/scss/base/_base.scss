@@ -1,9 +1,15 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
+    background-color: var(--page-bg);
+    color: var(--text-color);
     font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
 }
