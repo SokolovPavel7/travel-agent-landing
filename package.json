@@ -35,5 +35,11 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"@easepick/bundle": "^1.2.1",
+		"@easepick/core": "^1.2.1",
+		"@easepick/time-plugin": "^1.2.1",
+		"@tarekraafat/autocomplete.js": "^10.2.7"
+	}
 }

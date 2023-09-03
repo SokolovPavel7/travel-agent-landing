@@ -13,3 +13,44 @@ body {
 img {
     display: block;
 }
+
+.title-1 {
+    color: var(--text-color);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &--decor {
+        position: relative;
+    }
+
+    &--decor::after {
+        content: '';
+
+        position: absolute;
+        left: 0px;
+        bottom: 5px;
+        z-index: -1;
+        width: 268px;
+        height: 24px;
+
+        background-image: url('./../../img/discover/underline.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.text {
+    color: var(--text-muted);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 27px */
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+.muted {
+    color: var(--text-muted);
+}

@@ -1,0 +1,60 @@
+.hint-discover {
+    display: flex;
+    width: 324px;
+    padding: 12px;
+    gap: 16px;
+
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 4px 34px 0px rgba(50, 75, 104, 0.17);
+}
+.hint-discover__picture {
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0; /*чтоб картинка не сжималась, если справа много контента*/
+}
+
+.hint-discover__desc {
+    flex-grow: 1; /*чтобы все свободное пространство было под информацию*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hint-discover__title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+.hint-discover__rating {
+    display: inline-flex;
+    gap: 4px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    &::before {
+        content: '';
+
+        width: 17px;
+        height: 16px;
+        background-image: url('./../img/icons/star-small.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.hint-discover__price {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    i {
+        color: var(--accent);
+        font-style: normal;
+    }
+    span {
+        font-weight: 450;
+    }
+}

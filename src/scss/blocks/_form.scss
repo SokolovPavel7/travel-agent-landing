@@ -1,0 +1,51 @@
+.form {
+    padding: 12px 16px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(144, 144, 144, 0.3);
+    background: #fff;
+}
+
+.form__devider {
+    height: 24px;
+    width: 1px;
+    background: #909090;
+}
+.form__label {
+    padding-left: 36px;
+    display: grid; /*колонки не даем, ряды идут авто*/
+    gap: 8px;
+
+    background-position: 0 0;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+
+    span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.form-map {
+    background-image: url('./../../img/icons/map.svg');
+}
+.form-calendar {
+    background-image: url('./../../img/icons/calendar.svg');
+}
+
+.form__input {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+
+    &::placeholder {
+        color: var(--text-muted);
+    }
+}
