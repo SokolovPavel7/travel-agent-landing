@@ -22,3 +22,7 @@
 -   npm i @easepick/bundle - пакет даты
 -   npm i @easepick/core @easepick/time-plugin - пакет времени
 -   инструкция по запуску: https://easepick.com/packages/bundle.html#usage
+
+## Используем Swiper-слайдер из npm пакета
+
+-   npm install swiper

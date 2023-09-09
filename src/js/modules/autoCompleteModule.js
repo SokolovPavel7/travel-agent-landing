@@ -1,7 +1,7 @@
 import autoComplete from '@tarekraafat/autocomplete.js';
 import countryList from '../helpers/countryList';
 
-function autoCompleteFunc() {
+function autoCompleteModule() {
     const autoCompleteJS = new autoComplete({
         // API Basic Configuration Object
         selector: '#autoCompleteCountry',
@@ -29,4 +29,4 @@ function autoCompleteFunc() {
     });
 }
 
-export default autoCompleteFunc;
+export default autoCompleteModule;

@@ -10,9 +10,12 @@
         <link rel="stylesheet" />
     </head>
     <body>
-        @@include('blocks/header.html')
-        <main>@@include('blocks/discover.html')</main>
-        @@include('blocks/footer.html')
+        @@include("blocks/header.html")
+        <main>
+            @@include("blocks/discover.html") @@include("blocks/partners.html")
+            @@include("blocks/popular.html")
+        </main>
+        @@include("blocks/footer.html")
         <script src="./js/index.bundle.js"></script>
     </body>
 </html>

@@ -1,17 +1,19 @@
-import autoCompleteFunc from './modules/autoCompleteFunc';
-import { easepick, TimePlugin } from '@easepick/bundle';
-// import { TimePlugin } from '@easepick/time-plugin';
+import autoCompleteModule from './modules/autoCompleteModule';
+import easePickModule from './modules/easePickModule';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-autoCompleteFunc();
+autoCompleteModule();
+easePickModule();
 
-const picker = new easepick.create({
-    element: document.getElementById('datePicker'),
-    css: [
-        'https://cdn.jsdelivr.net/npm/@easepick/core@1.2.1/dist/index.css',
-        'https://cdn.jsdelivr.net/npm/@easepick/time-plugin@1.2.1/dist/index.css',
-    ],
-    format: 'HH:mm, DD/MM/YY',
-    plugins: [TimePlugin],
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    slidesPerView: 4,
+    spaceBetween: 32,
+    navigation: {
+        nextEl: '#sliderNext',
+        prevEl: '#sliderPrev',
+    },
 });
 
 // import mobileNav from './modules/mobile-nav.js';
