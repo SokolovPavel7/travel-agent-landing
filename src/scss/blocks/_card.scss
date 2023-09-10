@@ -1,5 +1,5 @@
 .card {
-    // max-width: 304px;
+    max-width: 304px;
 }
 .card__img {
     overflow: hidden;
@@ -33,6 +33,7 @@
 
     &::before {
         content: '';
+        transform: translateY(-10%);
         display: block;
         width: 17px;
         height: 16px;
