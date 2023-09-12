@@ -1,14 +1,33 @@
 .footer {
+    padding: 80px 0;
     background: #181818;
-    padding: 50px 0;
-    font-size: 32px;
     color: #fff;
 
-    h1 {
-        font-size: 32px;
+    a {
+        color: #fff;
     }
+}
 
-    @media (max-width: 1200px) {
-        font-size: 26px;
-    }
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px;
+    align-items: start;
+}
+.footer__copyright {
+    display: grid;
+    gap: 24px;
+}
+.footer__copyrigh-text {
+    max-width: 300px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%;
+}
+.footer__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
 }

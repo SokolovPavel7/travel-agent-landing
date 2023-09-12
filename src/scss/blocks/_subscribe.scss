@@ -1,4 +1,5 @@
 .subscribe {
+    overflow: hidden;
     padding: 80px 0;
     background-color: var(--accent);
     color: #fff;
@@ -17,10 +18,10 @@
         content: '';
         position: absolute;
         left: -78px;
-        top: -80px;
+        top: -100px;
         width: 236px;
         height: 273px;
-        background-image: url('./../../img/subscribe/vector.svg');
+        background-image: url('./../../img/subscribe/subscribe-pin-bg.svg');
         background-repeat: no-repeat;
     }
 }
