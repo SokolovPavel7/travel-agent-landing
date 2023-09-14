@@ -23,6 +23,14 @@
 -   npm i @easepick/core @easepick/time-plugin - пакет времени
 -   инструкция по запуску: https://easepick.com/packages/bundle.html#usage
 
-## Используем Swiper-слайдер из npm пакета
+## Используем Swiper-слайдер из npm пакета swiper
 
 -   npm install swiper
+
+## Используем анимацию из npm пакета scrollreveal
+
+Этот пакет используется для вызова анимации на определенные элементы сайта через селектор (класс) элемента:
+
+-   npm install scrollreveal
+-   инструкция по запуску https://www.npmjs.com/package/scrollreveal
+-   параметры использования https://scrollrevealjs.org/api/reveal.html

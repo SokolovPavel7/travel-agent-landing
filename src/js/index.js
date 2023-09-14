@@ -1,20 +1,12 @@
 import autoCompleteModule from './modules/autoCompleteModule';
 import easePickModule from './modules/easePickModule';
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import swiperModule from './modules/swiperModule';
+import scrollRevealModule from './modules/scrollRevealModule';
 
 autoCompleteModule();
 easePickModule();
-
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    slidesPerView: 4,
-    spaceBetween: 32,
-    navigation: {
-        nextEl: '#sliderNext',
-        prevEl: '#sliderPrev',
-    },
-});
+swiperModule();
+scrollRevealModule();
 
 // import mobileNav from './modules/mobile-nav.js';
 // mobileNav();

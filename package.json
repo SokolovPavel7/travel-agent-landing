@@ -41,6 +41,7 @@
 		"@easepick/core": "^1.2.1",
 		"@easepick/time-plugin": "^1.2.1",
 		"@tarekraafat/autocomplete.js": "^10.2.7",
+		"scrollreveal": "^4.0.9",
 		"swiper": "^10.2.0"
 	}
 }

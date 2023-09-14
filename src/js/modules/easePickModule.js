@@ -1,5 +1,4 @@
 import { easepick, TimePlugin } from '@easepick/bundle';
-// import { TimePlugin } from '@easepick/time-plugin';
 
 function easePickModule() {
     const picker = new easepick.create({
