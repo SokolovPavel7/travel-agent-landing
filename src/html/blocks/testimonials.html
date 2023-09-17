@@ -1,24 +1,7 @@
 <section class="testimonials">
     <div class="container">
         <div class="testimonials__grid">
-            <div class="testimonials_col">
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-            </div>
-            <div class="testimonials_col">
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-            </div>
-            <div class="testimonials_col">
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-                @@include("./testimonials/card.html")
-            </div>
+            @@loop("./templates/card-review.html", "./data/testimonials.json")
         </div>
     </div>
 </section>

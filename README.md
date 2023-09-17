@@ -1,4 +1,4 @@
-## HTML верстка сайта лендинга на Gulp сборке. Адаптив, SCSS, календарь, swiper slider, анимации.
+# HTML верстка сайта лендинга на Gulp сборке. Адаптив, SCSS, календарь, swiper slider, анимации.
 
 1. Для разработки используем макет в figma и gulp-сборку от ВебКадеми (https://www.youtube.com/watch?v=D_HW-tvyKKE&t=894s)
 2. Для ускорения разработки используем плагин eCSStractor for VSCode для копирования всех классов:
@@ -10,7 +10,7 @@
    "when": "editorTextFocus"
    }
 
-# В проекте в секции discover в формах ввода выбора локации и даты используем npm пакеты:
+## В проекте в секции discover в формах ввода выбора локации и даты используем npm пакеты:
 
 1. npm пакет autocomplete - автоподстановка страны:
 
@@ -34,3 +34,8 @@
 -   npm install scrollreveal
 -   инструкция по запуску https://www.npmjs.com/package/scrollreveal
 -   параметры использования https://scrollrevealjs.org/api/reveal.html
+
+## Используя возможности пакета gulp-file-include (прописан в сборку gulp), выводим карточки с рейтингами в секции testimonials
+
+-   инструкция по использованию https://www.npmjs.com/package/gulp-file-include
+-   код прописан в файлах: testimonials.json; testimonials.html; card-review.html и testimonials.scss

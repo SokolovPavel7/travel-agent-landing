@@ -8,12 +8,15 @@ ScrollReveal({
 });
 
 function scrollRevealModule() {
-    ScrollReveal().reveal('.header, .partners, .popular__title', {
+    ScrollReveal().reveal('.header, .popular__title', {
         origin: 'top',
     });
-    ScrollReveal().reveal('.discover__picture-hint, .discover__title', {
-        origin: 'left',
-    });
+    ScrollReveal().reveal(
+        '.discover__picture-hint, .discover__title, .hint-discover',
+        {
+            origin: 'left',
+        }
+    );
     ScrollReveal().reveal(
         '.discover__picture-scroll, .discover__text, .popular__controls',
         {
