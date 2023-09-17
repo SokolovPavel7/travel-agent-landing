@@ -23,9 +23,10 @@
 -   npm i @easepick/core @easepick/time-plugin - пакет времени
 -   инструкция по запуску: https://easepick.com/packages/bundle.html#usage
 
-## Используем Swiper-слайдер из npm пакета swiper
+## Используем Swiper-слайдер из npm пакета swiper для секции popular
 
 -   npm install swiper
+-   ссылка на инструкцию https://swiperjs.com/get-started
 
 ## Используем анимацию из npm пакета scrollreveal
 
@@ -35,7 +36,19 @@
 -   инструкция по запуску https://www.npmjs.com/package/scrollreveal
 -   параметры использования https://scrollrevealjs.org/api/reveal.html
 
-## Используя возможности пакета gulp-file-include (прописан в сборку gulp), выводим карточки с рейтингами в секции testimonials
+## Используя возможности пакета gulp-file-include (прописан в сборку gulp), выводим карточки с рейтингами в секции testimonials c помощью шаблона карточки
 
 -   инструкция по использованию https://www.npmjs.com/package/gulp-file-include
 -   код прописан в файлах: testimonials.json; testimonials.html; card-review.html и testimonials.scss
+
+## В секции testimonials для карточек с рейтингами используем вертикальный слайдер
+
+1. Ссылка на инструкцию https://swiperjs.com/get-started
+2. HTML разметка в файле testimonials.html
+3. В файле swiperTestimonials.js настройки js для свайпера
+4. В файле testimonials.scss задать высоту столбца всему вертикальному свайперу в доп классе testimonials\_\_swiper и каждому элементу, а также прописать для плавности анимации scc-свойства доп классу smooth-transition. Это делается потому, что в js-свойствах свайпера нет такого режима:
+   .smooth-transition {
+   -webkit-transition-timing-function: linear !important;
+   -o-transition-timing-function: linear !important;
+   transition-timing-function: linear !important;
+   }

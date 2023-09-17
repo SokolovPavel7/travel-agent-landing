@@ -1,16 +1,16 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-function swiperModule() {
-    const swiper = new Swiper('.swiper', {
+function swiperPopular() {
+    const swiper = new Swiper('#swiper-popular', {
         direction: 'horizontal',
         slidesPerView: 4,
         spaceBetween: 32,
         navigation: {
-            nextEl: '#sliderNext',
-            prevEl: '#sliderPrev',
+            nextEl: '#popularNext',
+            prevEl: '#popularPrev',
         },
     });
 }
 
-export default swiperModule;
+export default swiperPopular;

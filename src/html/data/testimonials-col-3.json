@@ -1,0 +1,44 @@
+[
+    {
+        "stars": 5,
+        "text": "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience.",
+        "name": "Angela Cole",
+        "role": "Travel Entusiast",
+        "img": "07.jpg"
+    },
+    {
+        "stars": 4,
+        "text": "A one-stop-shop for all things travel! The website's variety of travel options and user reviews helped me make informed decisions and ensured a smooth trip.",
+        "name": "Bambang Susilo",
+        "role": "Travel Entusiast",
+        "img": "08.jpg"
+    },
+    {
+        "stars": 5,
+        "text": "Hands down the best travel website I've ever used! The user interface was so intuitive, and I was able to book my dream vacation effortlessly. erat.",
+        "name": "Name Surname",
+        "role": "Travel Entusiast",
+        "img": "09.jpg"
+    },
+    {
+        "stars": 5,
+        "text": "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience.",
+        "name": "Angela Cole",
+        "role": "Travel Entusiast",
+        "img": "07.jpg"
+    },
+    {
+        "stars": 4,
+        "text": "A one-stop-shop for all things travel! The website's variety of travel options and user reviews helped me make informed decisions and ensured a smooth trip.",
+        "name": "Bambang Susilo",
+        "role": "Travel Entusiast",
+        "img": "08.jpg"
+    },
+    {
+        "stars": 5,
+        "text": "Hands down the best travel website I've ever used! The user interface was so intuitive, and I was able to book my dream vacation effortlessly. erat.",
+        "name": "Name Surname",
+        "role": "Travel Entusiast",
+        "img": "09.jpg"
+    }
+]
