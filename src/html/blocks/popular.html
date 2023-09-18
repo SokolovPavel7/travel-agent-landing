@@ -20,6 +20,13 @@
         <!-- popular__top -->
     </div>
     <div class="container-right">
-        <div class="popular__slider">@@include("elements/swiper.html")</div>
+        <div class="popular__slider">
+            <div class="swiper" id="swiper-popular">
+                <div class="swiper-wrapper">
+                    @@loop("./templates/popular-slider.html",
+                    './data/popular-slider.json')
+                </div>
+            </div>
+        </div>
     </div>
 </section>
