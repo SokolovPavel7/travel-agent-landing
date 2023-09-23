@@ -52,3 +52,22 @@
    -o-transition-timing-function: linear !important;
    transition-timing-function: linear !important;
    }
+
+## Сделана адаптивная верстка для мобильных устройств с шириной экрана до 320px
+
+- для точек перехода использованы mixin-ы, которые находятся в файле mixin.scss
+- настройки мобильной адабтации свайпера https://swiperjs.com/demos#responsive-breakpoints переходим по закладке core  https://codesandbox.io/s/cgmkkh и копируем там эти настройки:
+breakpoints: {
+   640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+   },
+   768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+   },
+   1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+   },
+}

@@ -8,17 +8,26 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+
+    @include mediaMobileS {
+        flex-direction: column; // ставим в одну колонку заголовок, текст и кнопки слайдера
+        align-items: flex-start;
+    }
 }
 
 .popular__title {
     display: grid;
     gap: 16px;
+
+    @include mediaMobile {
+        gap: 8px;
+    }
 }
 
 .popular__controls {
+    flex-shrink: 0; //сохраняем размер кнопок, тесним другие элементы при уменшении ширины
     display: flex;
     gap: 16px;
-}
 
-.popular__slider {
+
 }

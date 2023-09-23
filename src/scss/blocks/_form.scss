@@ -8,12 +8,20 @@
     border-radius: 16px;
     border: 1px solid rgba(144, 144, 144, 0.3);
     background: #fff;
+
+    @include mediaMobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .form__devider {
     height: 24px;
     width: 1px;
     background: #909090;
+
+    @include mediaMobile {
+        display: none;
+    }
 }
 .form__label {
     padding-left: 36px;
@@ -30,13 +38,12 @@
         font-weight: 500;
         line-height: normal;
     }
-}
-
-.form-map {
-    background-image: url('./../../img/icons/map.svg');
-}
-.form-calendar {
-    background-image: url('./../../img/icons/calendar.svg');
+    &--map {
+        background-image: url('./../../img/icons/map.svg');
+    }
+    &--calendar {
+        background-image: url('./../../img/icons/calendar.svg');
+    }
 }
 
 .form__input {
@@ -48,4 +55,20 @@
     &::placeholder {
         color: var(--text-muted);
     }
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--accent);
+
+    transition: opacity 0.2s ease-in;
+    &:hover {
+        opacity: 0.8;
+    }
+
+    
 }

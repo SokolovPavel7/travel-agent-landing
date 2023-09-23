@@ -1,5 +1,9 @@
 .discover {
     padding: 60px 0;
+
+    @include mediaMobileXS {
+        padding: 10px 0;
+    }
 }
 
 .discover__grid {
@@ -7,6 +11,15 @@
     grid-template-columns: 1fr 1fr; /*столбцы-шаблона сетки*/
     gap: 80px;
     align-items: center;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    @include mediaMobile {
+        gap: 35px;
+    }
 }
 
 .discover__title {
@@ -15,19 +28,57 @@
 
 .discover__text {
     margin-bottom: 40px;
+
+    @include mediaMobileXS {
+        margin-bottom: 20px;
+    }
 }
 
 .discover__picture {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //добавили при адаптивной верстке
+    width: fit-content;
+    justify-self: center;
+
+    @include mediaTablet {
+        grid-row: -1 / 1;
+    }
 }
 
 .discover__picture-hint {
     position: absolute;
     top: 90px;
     left: 40px;
+
+    @include mediaLaptop {
+        top: 40px;
+        left: 20px;
+    }
+
+    @include mediaMobile {
+        top: 30px;
+        left: 0px;
+    }
+
+    @include mediaMobileXS {
+        display: none;
+    }
 }
 .discover__picture-scroll {
     position: absolute;
     right: 15px;
     bottom: 20px;
+
+    @include mediaLaptop {
+        right: 0px;
+        bottom: 0px;
+    }
+
+    @include mediaMobile {
+        width: 30%;
+    }
 }

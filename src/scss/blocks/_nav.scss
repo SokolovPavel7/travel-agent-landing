@@ -4,8 +4,10 @@
     align-items: center;
     gap: 32px; /*отступы менжду колонками и рядами*/
 }
-// .logo {
-// }
+.nav__logo {
+    flex-shrink: 0; //чтобы не сжимался
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -18,9 +20,22 @@
     a.active {
         color: #35aff4;
     }
+    @include mediaMobile {
+        display: none;
+    }
 }
 
 .nav__btns {
     display: flex;
     gap: 12px;
+    @include mediaMobile {
+        display: none;
+    }
+}
+
+.nav__icon {
+    display: none;
+    @include mediaMobile {
+        display: block;
+    }
 }

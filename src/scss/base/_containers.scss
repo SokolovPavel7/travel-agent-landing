@@ -10,8 +10,9 @@
 		(100% - var(--container-width)) / 2 + var(--container-padding)
 	);
 
-	@media (max-width: var(--laptop-size)) {
+	@media (max-width: 1229px) {
 		padding-left: var(--container-padding);
+		padding-right: var(--container-padding);
 	}
 }
 
@@ -21,7 +22,7 @@
 		(100% - var(--container-width)) / 2 + var(--container-padding)
 	);
 
-	@media (max-width: var(--laptop-size)) {
+	@media (max-width: 1229px) {
 		padding-right: var(--container-padding);
 	}
 }

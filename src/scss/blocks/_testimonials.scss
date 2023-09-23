@@ -1,7 +1,8 @@
 .testimonials__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    margin: 0 -10px;
+    gap: 12px;
     overflow: hidden;
 }
 .testimonials__col {

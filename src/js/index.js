@@ -4,11 +4,13 @@ import swiperPopular from './modules/swiperPopular';
 import scrollRevealModule from './modules/scrollRevealModule';
 import swiperTestimonials from './modules/swiperTestimonials';
 
-autoCompleteModule();
-easePickModule();
+// autoCompleteModule();
+// easePickModule();
 swiperPopular();
 scrollRevealModule();
 swiperTestimonials();
 
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
+
+
