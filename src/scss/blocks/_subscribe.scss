@@ -2,8 +2,12 @@
     overflow: hidden;
     padding: 80px 0;
     background-color: var(--accent);
-    color: #fff;
-    height: 224px;
+    color: var(--text-white);
+    
+    @include mediaLaptop {
+    padding: 40px 0;
+
+    }
 }
 
 .subscribe__row {
@@ -23,6 +27,24 @@
         height: 273px;
         background-image: url('./../../img/subscribe/subscribe-pin-bg.svg');
         background-repeat: no-repeat;
+
+        @include mediaTablet {
+            top: -47px;
+        }
+        @include mediaMobile {
+            display: none;
+        }
+    }
+
+    @include mediaTablet {
+        flex-direction: column; //флекс элементы в одну колонку
+        align-items: center;
+        text-align: center;
+        padding: 0 150px;
+    }
+    @include mediaMobile {
+        padding: 0;
+        
     }
 }
 .subscribe__desc {
@@ -41,4 +63,18 @@
     font-style: normal;
     font-weight: 450;
     line-height: normal;
+}
+
+.subscribe__form {
+    flex-grow: 1; //гибкий рост для импута
+    min-width: 400px;
+
+    @include mediaMobile {
+        min-width: unset;
+    }
+    @include mediaMobileS {
+        width: 100%;
+    }
+
+
 }

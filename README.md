@@ -56,7 +56,7 @@
 ## Сделана адаптивная верстка для мобильных устройств с шириной экрана до 320px
 
 - для точек перехода использованы mixin-ы, которые находятся в файле mixin.scss
-- настройки мобильной адабтации свайпера https://swiperjs.com/demos#responsive-breakpoints переходим по закладке core  https://codesandbox.io/s/cgmkkh и копируем там эти настройки:
+- настройки мобильной адаптации свайпера https://swiperjs.com/demos#responsive-breakpoints переходим по закладке core  https://codesandbox.io/s/cgmkkh и копируем там эти настройки, изменяем их под проект:
 breakpoints: {
    640: {
       slidesPerView: 2,
@@ -71,3 +71,7 @@ breakpoints: {
       spaceBetween: 50,
    },
 }
+
+## При адаптивной верстке секции testimonials вертикальный слайдер меняем на горизонтальный при шишине экрана до 1023px
+
+- инструкция для отключения текущего (вертикального) свайпера и переходе к другому (горизонтальному) свайперу https://medium.com/@networkaaron/swiper-how-to-destroy-swiper-on-min-width-breakpoints-a947491ddec8

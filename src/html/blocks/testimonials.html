@@ -1,45 +1,49 @@
 <section class="testimonials">
     <div class="container">
+
+        <!-- Horizontal-Slider -->
+        <div class="testimonials-horizontal">
+            <div class="swiper" id="testimonials-horizontal-swiper">
+                <div class="swiper-wrapper smooth-transition">
+                    @@loop('./templates/card-review.html', './data/testimonials-all.json')
+                </div>
+            </div>
+        </div>
+        <!-- Horizontal-Slider -->
+
+        <!-- 3 Vertical-Sliders -->
         <div class="testimonials__grid">
+          
             <div class="testimonials__col">
                 <!-- Slider -->
-                <div
-                    class="swiper testimonials__swiper"
-                    id="testimonials-col-1"
-                >
+                <div class="swiper testimonials__swiper" id="testimonials-col-1">
                     <div class="swiper-wrapper smooth-transition">
-                        @@loop('./templates/card-review.html',
-                        './data/testimonials-col-1.json')
+                        @@loop('./templates/card-review.html', './data/testimonials-col-1.json')
                     </div>
                 </div>
                 <!-- Slider end-->
             </div>
+
             <div class="testimonials__col">
                 <!-- Slider -->
-                <div
-                    class="swiper testimonials__swiper"
-                    id="testimonials-col-2"
-                >
+                <div class="swiper testimonials__swiper" id="testimonials-col-2">
                     <div class="swiper-wrapper smooth-transition">
-                        @@loop('./templates/card-review.html',
-                        './data/testimonials-col-2.json')
+                        @@loop('./templates/card-review.html', './data/testimonials-col-2.json')
                     </div>
                 </div>
                 <!-- Slider end-->
             </div>
+
             <div class="testimonials__col">
                 <!-- Slider -->
-                <div
-                    class="swiper testimonials__swiper"
-                    id="testimonials-col-3"
-                >
+                <div class="swiper testimonials__swiper" id="testimonials-col-3">
                     <div class="swiper-wrapper smooth-transition">
-                        @@loop('./templates/card-review.html',
-                        './data/testimonials-col-3.json')
+                        @@loop('./templates/card-review.html', './data/testimonials-col-3.json')
                     </div>
                 </div>
                 <!-- Slider end-->
             </div>
         </div>
+        <!-- 3 Vertical-Sliders -->
     </div>
 </section>

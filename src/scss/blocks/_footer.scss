@@ -6,6 +6,10 @@
     a {
         color: #fff;
     }
+
+    @include mediaMobile {
+        padding: 40px 20px;
+    }
 }
 
 .footer__row {
@@ -13,6 +17,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 128px;
     align-items: start;
+
+    @include mediaMobileS {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 }
 .footer__copyright {
     display: grid;
@@ -30,4 +39,8 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 40px;
+
+    @include mediaMobileS {
+        grid-row: -1 / 1; //навигацию поднияли перед логотипом
+    }
 }
