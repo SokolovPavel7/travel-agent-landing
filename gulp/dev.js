@@ -13,6 +13,7 @@ const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 
+
 gulp.task('clean:dev', function (done) {
     if (fs.existsSync('./build/')) {
         return gulp
@@ -103,6 +104,7 @@ gulp.task('server:dev', function () {
     return gulp.src('./build/').pipe(server(serverOptions));
 });
 
+
 gulp.task('watch:dev', function () {
     gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));
     gulp.watch('./src/html/**/*.*', gulp.parallel('html:dev'));
@@ -111,3 +113,4 @@ gulp.task('watch:dev', function () {
     gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
     gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
 });
+

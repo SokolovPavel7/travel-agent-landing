@@ -1,6 +1,7 @@
 .scroll-down {
     position: relative;
     display: inline-block;
+    overflow: hidden;
 }
 .scroll-down__text {
     animation: rotation 10s linear 0s infinite running normal;

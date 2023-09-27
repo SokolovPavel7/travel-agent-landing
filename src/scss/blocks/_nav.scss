@@ -13,9 +13,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+
     a {
         color: #181818;
     }
+
     a:hover,
     a.active {
         color: #35aff4;
@@ -28,6 +30,7 @@
 .nav__btns {
     display: flex;
     gap: 12px;
+
     @include mediaMobile {
         display: none;
     }
@@ -35,6 +38,7 @@
 
 .nav__icon {
     display: none;
+    
     @include mediaMobile {
         display: block;
     }
