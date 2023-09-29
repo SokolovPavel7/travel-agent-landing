@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
 
 // Tasks
 require('./gulp/dev.js');
@@ -37,6 +36,3 @@ gulp.task(
     )
 );
 
-gulp.task('deploy', function () {
-    return gulp.src('./build/**/*').pipe(ghPages());
-});

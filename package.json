@@ -10,7 +10,6 @@
         "gulp-clean": "^0.4.0",
         "gulp-csso": "^4.0.1",
         "gulp-file-include": "^2.3.0",
-        "gulp-gh-pages": "^0.5.4",
         "gulp-group-css-media-queries": "^1.2.2",
         "gulp-htmlclean": "^2.7.22",
         "gulp-imagemin": "^7.1.0",
